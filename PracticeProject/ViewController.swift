@@ -25,6 +25,7 @@ extension ViewController : UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if self.ScrollView.contentOffset.y >= 100 {
             print("Sticky Header ON")
+
         } else {
             print("Sticky Header Off")
         }
