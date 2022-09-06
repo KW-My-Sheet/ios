@@ -7,10 +7,10 @@
 
 import Foundation
 
-// MARK: - [POST] 12.3 거래 등록 /orders
+// MARK: - [POST] 1.4 프로필 편집
 class post_1_4 {
     
-    func post_1_4_UserProfile(accessToken:String, userName:String) {
+    func post_1_4_UserProfile(accessToken:String, userName:String, onCompleted: @escaping (Result<EditResponse,Error>)-> Void) {
             let Testurl = URL(string: "https://prod.jinsoo.shop/app/users/32")!
 
             var userProfile = EditRequest(userName: userName, profileImgURL: "sa")
@@ -49,16 +49,16 @@ class post_1_4 {
                 
                 do { // 요청 O 응답 O
                     let decoder = JSONDecoder()
-                    // json 객체에서 data 유형의 인스턴스로 디코딩하는 객체! Decodable, Codable 프로토콜을 준수하는 라인!
                     let result = try decoder.decode(EditResponse.self, from: data)
-                    
-                    print(result)
-                    
+                                        
+                    onCompleted(.success(result))
+                
                 }
                 
 
                 catch {
                     print("error while print json")
+                    onCompleted(.failure(error))
                 }
 
             }.resume()
