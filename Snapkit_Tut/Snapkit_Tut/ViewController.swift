@@ -43,11 +43,14 @@ class ViewController: UIViewController {
         self.view.addSubview(blueBox)
         
         redBox.snp.makeConstraints { make in
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
             make.edges.equalTo(self.view).inset(UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
         }
         
         yellowBox.snp.makeConstraints { make in
             make.width.height.equalTo(100)
+            make.centerX.equalTo(self.redBox)
+
         }
         
     }
@@ -73,7 +76,7 @@ struct ViewControllerRepresentable_PreviewProvider: PreviewProvider {
             ViewControllerRepresentable()
                 .ignoresSafeArea()
                 .previewDisplayName(/*@START_MENU_TOKEN@*/"Preview"/*@END_MENU_TOKEN@*/)
-                .previewDevice(PreviewDevice(rawValue: "iPhone 11"))
+                .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro"))
         }
         
     }
