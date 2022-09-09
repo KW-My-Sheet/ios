@@ -41,7 +41,20 @@ class EnterEmailVC: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] authResult, error in
             guard let self = self else { return }
             // 순환참조 방지
-            self.showMainViewController()
+            
+            
+            if let error = error {
+                let code = (error as NSError).code
+                switch code {
+                case 17007:
+                    // 로그인하기
+                    self.loginUser(email: email, password: password)
+                default:
+                    self.errorMessageLabel.text = error.localizedDescription
+                }
+            }
+            
+//            self.showMainViewController()
             // 로그인 끝났을 때 Show로 화면 이동
         }
     }
@@ -51,6 +64,19 @@ class EnterEmailVC: UIViewController {
         let mainVC = storyBoard.instantiateViewController(identifier: "MainVC")
         mainVC.modalPresentationStyle = .fullScreen
         navigationController?.show(mainVC, sender: nil)
+    }
+    
+    private func loginUser(email:String, password:String) {
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] _, error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                self.errorMessageLabel.text = error.localizedDescription
+            } else {
+                self.showMainViewController()
+            }
+        }
+        
     }
     
 }
@@ -79,3 +105,4 @@ extension EnterEmailVC: UITextFieldDelegate {
 // AutoLayout 새로고침 버튼
 // Label 0으로 하면 유동적으로 변경
 // 로그아웃 - popToRootViewController (RootVC가 어딘지 수시로 확인 가능)
+// break point - po error 로 무슨 에러났는지 찍어보기
