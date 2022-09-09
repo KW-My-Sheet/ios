@@ -59,3 +59,6 @@ extension EnterEmailVC: UITextFieldDelegate {
 // TextField - Secure Text
 // TextField Delegate - shouldReturn: 입력완료 후 내려가게
 // TextField becomeFirstResponder 커서 초기화
+// AutoLayout 새로고침 버튼
+// Label 0으로 하면 유동적으로 변경
+// 로그아웃 - popToRootViewController (RootVC가 어딘지 수시로 확인 가능)
