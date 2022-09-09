@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B763A7F28C76BD400C76818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B763A7E28C76BD400C76818 /* AppDelegate.swift */; };
-		9B763A8128C76BD400C76818 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B763A8028C76BD400C76818 /* SceneDelegate.swift */; };
-		9B763A8328C76BD400C76818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B763A8228C76BD400C76818 /* ViewController.swift */; };
-		9B763A8628C76BD400C76818 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B763A8428C76BD400C76818 /* Main.storyboard */; };
-		9B763A8828C76BD900C76818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B763A8728C76BD900C76818 /* Assets.xcassets */; };
-		9B763A8B28C76BD900C76818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B763A8928C76BD900C76818 /* LaunchScreen.storyboard */; };
+		9B090E8F28CAEB0B009DDDC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B090E8E28CAEB0B009DDDC0 /* AppDelegate.swift */; };
+		9B090E9128CAEB0B009DDDC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B090E9028CAEB0B009DDDC0 /* SceneDelegate.swift */; };
+		9B090E9628CAEB0B009DDDC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B090E9428CAEB0B009DDDC0 /* Main.storyboard */; };
+		9B090E9828CAEB10009DDDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B090E9728CAEB10009DDDC0 /* Assets.xcassets */; };
+		9B090E9B28CAEB10009DDDC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B090E9928CAEB10009DDDC0 /* LaunchScreen.storyboard */; };
+		9B090EA328CAEBB4009DDDC0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B090EA228CAEBB4009DDDC0 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B763A7B28C76BD400C76818 /* KakaoLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B763A7E28C76BD400C76818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B763A8028C76BD400C76818 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B763A8228C76BD400C76818 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9B763A8528C76BD400C76818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9B763A8728C76BD900C76818 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9B763A8A28C76BD900C76818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9B763A8C28C76BD900C76818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B090E8B28CAEB0B009DDDC0 /* Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B090E8E28CAEB0B009DDDC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B090E9028CAEB0B009DDDC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9B090E9528CAEB0B009DDDC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B090E9728CAEB10009DDDC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B090E9A28CAEB10009DDDC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B090E9C28CAEB10009DDDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B090EA228CAEBB4009DDDC0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9B763A7828C76BD400C76818 /* Frameworks */ = {
+		9B090E8828CAEB0B009DDDC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B763A7228C76BD400C76818 = {
+		9B090E8228CAEB0B009DDDC0 = {
 			isa = PBXGroup;
 			children = (
-				9B763A7D28C76BD400C76818 /* KakaoLogin */,
-				9B763A7C28C76BD400C76818 /* Products */,
+				9B090E8D28CAEB0B009DDDC0 /* Firebase */,
+				9B090E8C28CAEB0B009DDDC0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9B763A7C28C76BD400C76818 /* Products */ = {
+		9B090E8C28CAEB0B009DDDC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B763A7B28C76BD400C76818 /* KakaoLogin.app */,
+				9B090E8B28CAEB0B009DDDC0 /* Firebase.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B763A7D28C76BD400C76818 /* KakaoLogin */ = {
+		9B090E8D28CAEB0B009DDDC0 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				9B763A7E28C76BD400C76818 /* AppDelegate.swift */,
-				9B763A8028C76BD400C76818 /* SceneDelegate.swift */,
-				9B763A8228C76BD400C76818 /* ViewController.swift */,
-				9B763A8428C76BD400C76818 /* Main.storyboard */,
-				9B763A8728C76BD900C76818 /* Assets.xcassets */,
-				9B763A8928C76BD900C76818 /* LaunchScreen.storyboard */,
-				9B763A8C28C76BD900C76818 /* Info.plist */,
+				9B090E8E28CAEB0B009DDDC0 /* AppDelegate.swift */,
+				9B090E9028CAEB0B009DDDC0 /* SceneDelegate.swift */,
+				9B090E9428CAEB0B009DDDC0 /* Main.storyboard */,
+				9B090EA228CAEBB4009DDDC0 /* LoginViewController.swift */,
+				9B090E9728CAEB10009DDDC0 /* Assets.xcassets */,
+				9B090E9928CAEB10009DDDC0 /* LaunchScreen.storyboard */,
+				9B090E9C28CAEB10009DDDC0 /* Info.plist */,
 			);
-			path = KakaoLogin;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B763A7A28C76BD400C76818 /* KakaoLogin */ = {
+		9B090E8A28CAEB0B009DDDC0 /* Firebase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B763A8F28C76BD900C76818 /* Build configuration list for PBXNativeTarget "KakaoLogin" */;
+			buildConfigurationList = 9B090E9F28CAEB10009DDDC0 /* Build configuration list for PBXNativeTarget "Firebase" */;
 			buildPhases = (
-				9B763A7728C76BD400C76818 /* Sources */,
-				9B763A7828C76BD400C76818 /* Frameworks */,
-				9B763A7928C76BD400C76818 /* Resources */,
+				9B090E8728CAEB0B009DDDC0 /* Sources */,
+				9B090E8828CAEB0B009DDDC0 /* Frameworks */,
+				9B090E8928CAEB0B009DDDC0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = KakaoLogin;
-			productName = KakaoLogin;
-			productReference = 9B763A7B28C76BD400C76818 /* KakaoLogin.app */;
+			name = Firebase;
+			productName = Firebase;
+			productReference = 9B090E8B28CAEB0B009DDDC0 /* Firebase.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9B763A7328C76BD400C76818 /* Project object */ = {
+		9B090E8328CAEB0B009DDDC0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					9B763A7A28C76BD400C76818 = {
+					9B090E8A28CAEB0B009DDDC0 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 9B763A7628C76BD400C76818 /* Build configuration list for PBXProject "KakaoLogin" */;
+			buildConfigurationList = 9B090E8628CAEB0B009DDDC0 /* Build configuration list for PBXProject "Firebase" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 9B763A7228C76BD400C76818;
-			productRefGroup = 9B763A7C28C76BD400C76818 /* Products */;
+			mainGroup = 9B090E8228CAEB0B009DDDC0;
+			productRefGroup = 9B090E8C28CAEB0B009DDDC0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B763A7A28C76BD400C76818 /* KakaoLogin */,
+				9B090E8A28CAEB0B009DDDC0 /* Firebase */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9B763A7928C76BD400C76818 /* Resources */ = {
+		9B090E8928CAEB0B009DDDC0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B763A8B28C76BD900C76818 /* LaunchScreen.storyboard in Resources */,
-				9B763A8828C76BD900C76818 /* Assets.xcassets in Resources */,
-				9B763A8628C76BD400C76818 /* Main.storyboard in Resources */,
+				9B090E9B28CAEB10009DDDC0 /* LaunchScreen.storyboard in Resources */,
+				9B090E9828CAEB10009DDDC0 /* Assets.xcassets in Resources */,
+				9B090E9628CAEB0B009DDDC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9B763A7728C76BD400C76818 /* Sources */ = {
+		9B090E8728CAEB0B009DDDC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B763A8328C76BD400C76818 /* ViewController.swift in Sources */,
-				9B763A7F28C76BD400C76818 /* AppDelegate.swift in Sources */,
-				9B763A8128C76BD400C76818 /* SceneDelegate.swift in Sources */,
+				9B090EA328CAEBB4009DDDC0 /* LoginViewController.swift in Sources */,
+				9B090E8F28CAEB0B009DDDC0 /* AppDelegate.swift in Sources */,
+				9B090E9128CAEB0B009DDDC0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9B763A8428C76BD400C76818 /* Main.storyboard */ = {
+		9B090E9428CAEB0B009DDDC0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9B763A8528C76BD400C76818 /* Base */,
+				9B090E9528CAEB0B009DDDC0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		9B763A8928C76BD900C76818 /* LaunchScreen.storyboard */ = {
+		9B090E9928CAEB10009DDDC0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9B763A8A28C76BD900C76818 /* Base */,
+				9B090E9A28CAEB10009DDDC0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9B763A8D28C76BD900C76818 /* Debug */ = {
+		9B090E9D28CAEB10009DDDC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		9B763A8E28C76BD900C76818 /* Release */ = {
+		9B090E9E28CAEB10009DDDC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +280,7 @@
 			};
 			name = Release;
 		};
-		9B763A9028C76BD900C76818 /* Debug */ = {
+		9B090EA028CAEB10009DDDC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -289,7 +289,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9LAFQ24GSN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KakaoLogin/Info.plist;
+				INFOPLIST_FILE = Firebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -300,7 +300,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Jason.KakaoLogin;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.Firebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -308,7 +308,7 @@
 			};
 			name = Debug;
 		};
-		9B763A9128C76BD900C76818 /* Release */ = {
+		9B090EA128CAEB10009DDDC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -317,7 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9LAFQ24GSN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KakaoLogin/Info.plist;
+				INFOPLIST_FILE = Firebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +328,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Jason.KakaoLogin;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.Firebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,25 +339,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B763A7628C76BD400C76818 /* Build configuration list for PBXProject "KakaoLogin" */ = {
+		9B090E8628CAEB0B009DDDC0 /* Build configuration list for PBXProject "Firebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B763A8D28C76BD900C76818 /* Debug */,
-				9B763A8E28C76BD900C76818 /* Release */,
+				9B090E9D28CAEB10009DDDC0 /* Debug */,
+				9B090E9E28CAEB10009DDDC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B763A8F28C76BD900C76818 /* Build configuration list for PBXNativeTarget "KakaoLogin" */ = {
+		9B090E9F28CAEB10009DDDC0 /* Build configuration list for PBXNativeTarget "Firebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B763A9028C76BD900C76818 /* Debug */,
-				9B763A9128C76BD900C76818 /* Release */,
+				9B090EA028CAEB10009DDDC0 /* Debug */,
+				9B090EA128CAEB10009DDDC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9B763A7328C76BD400C76818 /* Project object */;
+	rootObject = 9B090E8328CAEB0B009DDDC0 /* Project object */;
 }
