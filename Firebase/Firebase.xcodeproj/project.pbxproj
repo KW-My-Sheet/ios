@@ -13,6 +13,8 @@
 		9B090E9828CAEB10009DDDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B090E9728CAEB10009DDDC0 /* Assets.xcassets */; };
 		9B090E9B28CAEB10009DDDC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B090E9928CAEB10009DDDC0 /* LaunchScreen.storyboard */; };
 		9B090EA328CAEBB4009DDDC0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B090EA228CAEBB4009DDDC0 /* LoginViewController.swift */; };
+		9BA98D7428CAF63E000B4546 /* EnterEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA98D7328CAF63E000B4546 /* EnterEmailVC.swift */; };
+		9BA98D7628CAFC7E000B4546 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA98D7528CAFC7E000B4546 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9B090E9A28CAEB10009DDDC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B090E9C28CAEB10009DDDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B090EA228CAEBB4009DDDC0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9BA98D7328CAF63E000B4546 /* EnterEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailVC.swift; sourceTree = "<group>"; };
+		9BA98D7528CAFC7E000B4546 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				9B090E8E28CAEB0B009DDDC0 /* AppDelegate.swift */,
 				9B090E9028CAEB0B009DDDC0 /* SceneDelegate.swift */,
 				9B090E9428CAEB0B009DDDC0 /* Main.storyboard */,
+				9BA98D7528CAFC7E000B4546 /* MainVC.swift */,
+				9BA98D7328CAF63E000B4546 /* EnterEmailVC.swift */,
 				9B090EA228CAEBB4009DDDC0 /* LoginViewController.swift */,
 				9B090E9728CAEB10009DDDC0 /* Assets.xcassets */,
 				9B090E9928CAEB10009DDDC0 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA98D7428CAF63E000B4546 /* EnterEmailVC.swift in Sources */,
+				9BA98D7628CAFC7E000B4546 /* MainVC.swift in Sources */,
 				9B090EA328CAEBB4009DDDC0 /* LoginViewController.swift in Sources */,
 				9B090E8F28CAEB0B009DDDC0 /* AppDelegate.swift in Sources */,
 				9B090E9128CAEB0B009DDDC0 /* SceneDelegate.swift in Sources */,
