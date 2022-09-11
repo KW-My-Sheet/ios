@@ -32,6 +32,7 @@
 		9B84587128CDA54200C295F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B84587728CDA5E600C295F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B84587928CDA6FD00C295F3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9B84587B28CDB1D000C295F3 /* Google_Sigin_In.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Google_Sigin_In.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 		9B84586228CDA53F00C295F3 /* Google_Sigin_In */ = {
 			isa = PBXGroup;
 			children = (
+				9B84587B28CDB1D000C295F3 /* Google_Sigin_In.entitlements */,
 				9B84586328CDA53F00C295F3 /* AppDelegate.swift */,
 				9B84586528CDA53F00C295F3 /* SceneDelegate.swift */,
 				9B84586728CDA53F00C295F3 /* ViewController.swift */,
@@ -380,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Google_Sigin_In/Google_Sigin_In.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9LAFQ24GSN;
@@ -409,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Google_Sigin_In/Google_Sigin_In.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9LAFQ24GSN;
