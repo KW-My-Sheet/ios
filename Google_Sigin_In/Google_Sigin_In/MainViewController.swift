@@ -43,4 +43,7 @@ class MainViewController: UIViewController {
     }
 }
 
+// Apple Login 하기
+// 이메일 가리기로 Login시, User의 이메일 나타내기 
 // 프로필 편집하기
+
