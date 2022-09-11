@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B84586428CDA53F00C295F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B84586328CDA53F00C295F3 /* AppDelegate.swift */; };
+		9B84586628CDA53F00C295F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B84586528CDA53F00C295F3 /* SceneDelegate.swift */; };
+		9B84586828CDA53F00C295F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B84586728CDA53F00C295F3 /* ViewController.swift */; };
+		9B84586B28CDA53F00C295F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B84586928CDA53F00C295F3 /* Main.storyboard */; };
+		9B84586D28CDA54200C295F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B84586C28CDA54200C295F3 /* Assets.xcassets */; };
+		9B84587028CDA54200C295F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B84586E28CDA54200C295F3 /* LaunchScreen.storyboard */; };
+		9B84587828CDA5E600C295F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B84587728CDA5E600C295F3 /* GoogleService-Info.plist */; };
+		9B84587A28CDA6FD00C295F3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B84587928CDA6FD00C295F3 /* MainViewController.swift */; };
+		B508A2EC56697E728D2CBD3F /* Pods_Google_Sigin_In.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9313D4CDAD9793C9466C50 /* Pods_Google_Sigin_In.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		022D54DAB24298C5DB33E53E /* Pods-Google_Sigin_In.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google_Sigin_In.release.xcconfig"; path = "Target Support Files/Pods-Google_Sigin_In/Pods-Google_Sigin_In.release.xcconfig"; sourceTree = "<group>"; };
+		04F4BA289D9170175C7E5FE0 /* Pods-Google_Sigin_In.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google_Sigin_In.debug.xcconfig"; path = "Target Support Files/Pods-Google_Sigin_In/Pods-Google_Sigin_In.debug.xcconfig"; sourceTree = "<group>"; };
+		3D9313D4CDAD9793C9466C50 /* Pods_Google_Sigin_In.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_Sigin_In.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B84586028CDA53F00C295F3 /* Google_Sigin_In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Google_Sigin_In.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B84586328CDA53F00C295F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B84586528CDA53F00C295F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9B84586728CDA53F00C295F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B84586A28CDA53F00C295F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B84586C28CDA54200C295F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B84586F28CDA54200C295F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B84587128CDA54200C295F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B84587728CDA5E600C295F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9B84587928CDA6FD00C295F3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B84585D28CDA53F00C295F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B508A2EC56697E728D2CBD3F /* Pods_Google_Sigin_In.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		067095826064A9C500699280 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04F4BA289D9170175C7E5FE0 /* Pods-Google_Sigin_In.debug.xcconfig */,
+				022D54DAB24298C5DB33E53E /* Pods-Google_Sigin_In.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4A099B17C4A21B21CE6304A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D9313D4CDAD9793C9466C50 /* Pods_Google_Sigin_In.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B84585728CDA53F00C295F3 = {
+			isa = PBXGroup;
+			children = (
+				9B84586228CDA53F00C295F3 /* Google_Sigin_In */,
+				9B84586128CDA53F00C295F3 /* Products */,
+				067095826064A9C500699280 /* Pods */,
+				4A099B17C4A21B21CE6304A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B84586128CDA53F00C295F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B84586028CDA53F00C295F3 /* Google_Sigin_In.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B84586228CDA53F00C295F3 /* Google_Sigin_In */ = {
+			isa = PBXGroup;
+			children = (
+				9B84586328CDA53F00C295F3 /* AppDelegate.swift */,
+				9B84586528CDA53F00C295F3 /* SceneDelegate.swift */,
+				9B84586728CDA53F00C295F3 /* ViewController.swift */,
+				9B84586928CDA53F00C295F3 /* Main.storyboard */,
+				9B84587928CDA6FD00C295F3 /* MainViewController.swift */,
+				9B84586C28CDA54200C295F3 /* Assets.xcassets */,
+				9B84586E28CDA54200C295F3 /* LaunchScreen.storyboard */,
+				9B84587128CDA54200C295F3 /* Info.plist */,
+				9B84587728CDA5E600C295F3 /* GoogleService-Info.plist */,
+			);
+			path = Google_Sigin_In;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B84585F28CDA53F00C295F3 /* Google_Sigin_In */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B84587428CDA54200C295F3 /* Build configuration list for PBXNativeTarget "Google_Sigin_In" */;
+			buildPhases = (
+				E3C7675B595EF95159A0AE85 /* [CP] Check Pods Manifest.lock */,
+				9B84585C28CDA53F00C295F3 /* Sources */,
+				9B84585D28CDA53F00C295F3 /* Frameworks */,
+				9B84585E28CDA53F00C295F3 /* Resources */,
+				DDEC0AA5284079470A262290 /* [CP] Embed Pods Frameworks */,
+				864DC196A5EEF660B6D7D2AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Google_Sigin_In;
+			productName = Google_Sigin_In;
+			productReference = 9B84586028CDA53F00C295F3 /* Google_Sigin_In.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B84585828CDA53F00C295F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					9B84585F28CDA53F00C295F3 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 9B84585B28CDA53F00C295F3 /* Build configuration list for PBXProject "Google_Sigin_In" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B84585728CDA53F00C295F3;
+			productRefGroup = 9B84586128CDA53F00C295F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B84585F28CDA53F00C295F3 /* Google_Sigin_In */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B84585E28CDA53F00C295F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B84587028CDA54200C295F3 /* LaunchScreen.storyboard in Resources */,
+				9B84587828CDA5E600C295F3 /* GoogleService-Info.plist in Resources */,
+				9B84586D28CDA54200C295F3 /* Assets.xcassets in Resources */,
+				9B84586B28CDA53F00C295F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		864DC196A5EEF660B6D7D2AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google_Sigin_In/Pods-Google_Sigin_In-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google_Sigin_In/Pods-Google_Sigin_In-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Google_Sigin_In/Pods-Google_Sigin_In-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDEC0AA5284079470A262290 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google_Sigin_In/Pods-Google_Sigin_In-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google_Sigin_In/Pods-Google_Sigin_In-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Google_Sigin_In/Pods-Google_Sigin_In-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3C7675B595EF95159A0AE85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Google_Sigin_In-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B84585C28CDA53F00C295F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B84586828CDA53F00C295F3 /* ViewController.swift in Sources */,
+				9B84586428CDA53F00C295F3 /* AppDelegate.swift in Sources */,
+				9B84586628CDA53F00C295F3 /* SceneDelegate.swift in Sources */,
+				9B84587A28CDA6FD00C295F3 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B84586928CDA53F00C295F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B84586A28CDA53F00C295F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B84586E28CDA54200C295F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B84586F28CDA54200C295F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B84587228CDA54200C295F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B84587328CDA54200C295F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B84587528CDA54200C295F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04F4BA289D9170175C7E5FE0 /* Pods-Google_Sigin_In.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9LAFQ24GSN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Google_Sigin_In/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jason.Google-Sigin-In";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B84587628CDA54200C295F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 022D54DAB24298C5DB33E53E /* Pods-Google_Sigin_In.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9LAFQ24GSN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Google_Sigin_In/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jason.Google-Sigin-In";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B84585B28CDA53F00C295F3 /* Build configuration list for PBXProject "Google_Sigin_In" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B84587228CDA54200C295F3 /* Debug */,
+				9B84587328CDA54200C295F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B84587428CDA54200C295F3 /* Build configuration list for PBXNativeTarget "Google_Sigin_In" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B84587528CDA54200C295F3 /* Debug */,
+				9B84587628CDA54200C295F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B84585828CDA53F00C295F3 /* Project object */;
+}
