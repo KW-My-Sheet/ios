@@ -19,6 +19,7 @@
 		9B4E79C728CED3DE00E82EE2 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E79C628CED3DE00E82EE2 /* CardDetailViewController.swift */; };
 		9B4E79C928CED3F700E82EE2 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E79C828CED3F700E82EE2 /* CreditCard.swift */; };
 		9B4E79CB28CED40100E82EE2 /* money.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B4E79CA28CED40100E82EE2 /* money.json */; };
+		9B4E79CD28CEFA8000E82EE2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B4E79CC28CEFA8000E82EE2 /* README.md */; };
 		BA25990396B77F7778882322 /* Pods_Firebase_DB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7365154DA14B5443601A39 /* Pods_Firebase_DB.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		9B4E79C628CED3DE00E82EE2 /* CardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardDetailViewController.swift; path = "../../../../../Downloads/Part 3 2/Ch2_CreditCardList/CreditCardList/CreditCardList/CardDetailViewController.swift"; sourceTree = "<group>"; };
 		9B4E79C828CED3F700E82EE2 /* CreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCard.swift; path = "../../../../../Downloads/Part 3 2/Ch2_CreditCardList/CreditCardList/CreditCardList/CreditCard.swift"; sourceTree = "<group>"; };
 		9B4E79CA28CED40100E82EE2 /* money.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = money.json; path = "../../../../../Downloads/Part 3 2/Ch2_CreditCardList/CreditCardList/CreditCardList/money.json"; sourceTree = "<group>"; };
+		9B4E79CC28CEFA8000E82EE2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BD34308AA5387B5D520C2E07 /* Pods-Firebase_DB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase_DB.debug.xcconfig"; path = "Target Support Files/Pods-Firebase_DB/Pods-Firebase_DB.debug.xcconfig"; sourceTree = "<group>"; };
 		CC7365154DA14B5443601A39 /* Pods_Firebase_DB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_DB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7825858B1BC4364C03EE97 /* Pods-Firebase_DB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase_DB.release.xcconfig"; path = "Target Support Files/Pods-Firebase_DB/Pods-Firebase_DB.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				9B4E79B528CECC6400E82EE2 /* LaunchScreen.storyboard */,
 				9B4E79B828CECC6400E82EE2 /* Info.plist */,
 				9B4E79BE28CECF0E00E82EE2 /* GoogleService-Info.plist */,
+				9B4E79CC28CEFA8000E82EE2 /* README.md */,
 			);
 			path = Firebase_DB;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				9B4E79B728CECC6400E82EE2 /* LaunchScreen.storyboard in Resources */,
 				9B4E79C528CED3D100E82EE2 /* CardListCellTableViewCell.xib in Resources */,
 				9B4E79CB28CED40100E82EE2 /* money.json in Resources */,
+				9B4E79CD28CEFA8000E82EE2 /* README.md in Resources */,
 				9B4E79BF28CECF0F00E82EE2 /* GoogleService-Info.plist in Resources */,
 				9B4E79B428CECC6400E82EE2 /* Assets.xcassets in Resources */,
 				9B4E79B228CECC5F00E82EE2 /* Main.storyboard in Resources */,
