@@ -11,13 +11,13 @@
         <!--카드 혜택 추천-->
         <scene sceneID="MsV-Vx-9Pb">
             <objects>
-                <tableViewController storyboardIdentifier="CardListViewController" id="U4L-bT-6Zx" customClass="CardListViewController" customModule="CreditCardList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CardListViewController" id="U4L-bT-6Zx" customClass="CardListViewController" customModule="Firebase_DB" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Wu-Bn-IYg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardListCellTableViewCell" id="XUq-CB-p7V" customClass="CardListCellTableViewCell" customModule="CreditCardList" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardListCellTableViewCell" id="XUq-CB-p7V" customClass="CardListCellTableViewCell" customModule="Firebase_DB" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XUq-CB-p7V" id="pD4-eB-Vey">
@@ -59,7 +59,7 @@
         <!--카드 혜택 상세-->
         <scene sceneID="fqM-l5-E9I">
             <objects>
-                <viewController storyboardIdentifier="CardDetailViewController" id="jcg-eL-GxW" customClass="CardDetailViewController" customModule="CreditCardList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CardDetailViewController" id="jcg-eL-GxW" customClass="CardDetailViewController" customModule="Firebase_DB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Bc-a0-1Pb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

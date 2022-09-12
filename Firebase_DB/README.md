@@ -13,7 +13,7 @@
 
 ---
 
-### 1. 기존에 API 요청 -> DataModel에 Write -> DataModel에서 Read하는 과정을 아래 코드로 줄임
+### 1.[GET] 기존에 API 요청 -> DataModel에 Write -> DataModel에서 Read하는 과정을 아래 코드로 줄임
 ```
 //MARK: - Firebase Realtime Database GET
         self.ref = Database.database().reference()
@@ -44,7 +44,73 @@
         // 이 안에서 모델로 변경 후 바로 View에 넣어줌 (GET & Model InputData)
 ```
 
-### 2. [Kingfisher]String 타입의 이미지 주소를 URL 타입으로 변경한 후 이를 Image View에 띄우기 
+### 2. [POST & PATCH] 데이터 추가
+
+```
+extension CardListViewController {
+.
+.
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+.
+.
+//MARK: - Firebase Realtime Database POST / PATCH
+        // Option 1
+        let cardID = creditCardList[indexPath.row].id
+//        ref.child("Item\(cardID)/isSelected").setValue(true)
+        // Key가 Item0, 1, 2 ... 인 경우 Post로 선택된 cardID를 넣는 과정
+        
+        // Option 2
+        ref.queryOrdered(byChild: "id").queryEqual(toValue: cardID).observe(.value) { [weak self] snapshot in
+            guard let self = self,
+                  let value = snapshot.value as? [String: [String:Any]],
+                  let key = value.keys.first else { return }
+            
+            self.ref.child("\(key)/isSelected").setValue(true)
+        }
+        // Key안의 Key(Item0.id, Item1.id)를 검색하여 그 Key안에 값을 저장하는 것
+.
+.
+    }
+.
+.
+}
+``` 
+
+### 3. [POST & PATCH] 데이터 삭제
+```
+extension CardListViewController {
+.
+.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Option 1
+            let cardID = creditCardList[indexPath.row].id
+            ref.child("Item\(cardID)").removeValue()
+            
+            // Option 2
+//            ref.queryOrdered(byChild: "id").queryEqual(toValue: cardID).observe(.value) { [weak self] snapshot in
+//                guard let self = self,
+//                      let value = snapshot.value as? [String: [String:Any]],
+//                      let key = value.keys.first else { return }
+//
+//                self.ref.child(key).removeValue()
+//            }
+            
+        }
+    }
+.
+.
+}
+```
+
+
+
+
+### 4. [Kingfisher]String 타입의 이미지 주소를 URL 타입으로 변경한 후 이를 Image View에 띄우기 
 ```
 extension CardListViewController {
 .
@@ -70,7 +136,7 @@ extension CardListViewController {
 .
 ```
 
-### 3.[Lottie] 동적인 이미지 불러오는 오픈소스
+### 5. [Lottie] 동적인 이미지 불러오는 오픈소스
 -> money.json에 Lottie 데이터가 있어야함 
 ```
 import UIKit
@@ -111,7 +177,7 @@ class CardDetailViewController: UIViewController {
 }
 ```
 
-### 4. A->B View로 데이터 전달하기
+### 6. A->B View로 데이터 전달하기
 ```
 extension CardListViewController {
 .
