@@ -9,11 +9,11 @@
     </objects>
 </document>
 
-### Firebase Realtime Datebase
+# Firebase Realtime Datebase
 
 ---
 
-1. 기존에 API 요청 -> DataModel에 Write -> DataModel에서 Read하는 과정을 아래 코드로 줄임
+### 1. 기존에 API 요청 -> DataModel에 Write -> DataModel에서 Read하는 과정을 아래 코드로 줄임
 ```
 //MARK: - Firebase Realtime Database GET
         self.ref = Database.database().reference()
@@ -42,4 +42,92 @@
             }
         }
         // 이 안에서 모델로 변경 후 바로 View에 넣어줌 (GET & Model InputData)
+```
+
+### 2. [Kingfisher]String 타입의 이미지 주소를 URL 타입으로 변경한 후 이를 Image View에 띄우기 
+```
+extension CardListViewController {
+.
+.
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CardListCellTableViewCell", for: indexPath) as? CardListCellTableViewCell else { return UITableViewCell() }
+        
+        let imageURL = URL(string: creditCardList[indexPath.row].cardImageURL)
+        // [Kingfisher] String을 URL 타입으로 변경
+        
+        cell.cardImageView.kf.setImage(with: imageURL)
+        // [Kingfisher] URL타입의 데이터를 바로 이미지로 만들어줌
+        
+        cell.rankLabel.text = "\(creditCardList[indexPath.row].rank)위"
+        cell.promotionLabel.text = "\(creditCardList[indexPath.row].promotionDetail.amount)만원 증정"
+        cell.cardNameLabel.text = creditCardList[indexPath.row].name
+        
+
+        return cell
+    }
+.
+.
+```
+
+### 3.[Lottie] 동적인 이미지 불러오는 오픈소스
+-> money.json에 Lottie 데이터가 있어야함 
+```
+import UIKit
+import Lottie
+
+class CardDetailViewController: UIViewController {
+    var promotionDetail: PromotionDetail?
+    
+    @IBOutlet weak var moneyLottie: AnimationView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var periodLabel: UILabel!
+    @IBOutlet weak var conditionLabel: UILabel!
+    @IBOutlet weak var benefitConditionLabel: UILabel!
+    @IBOutlet weak var benefitDetailLabel: UILabel!
+    @IBOutlet weak var benefitDateLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let animationView = AnimationView(name: "money")
+        self.moneyLottie.contentMode = .scaleAspectFit
+        self.moneyLottie.addSubview(animationView)
+        animationView.frame = self.moneyLottie.bounds
+        animationView.loopMode = .loop
+        animationView.play()
+        
+        guard let detail = promotionDetail else { return }
+        self.titleLabel.text = """
+            \(detail.companyName)카드 쓰면
+            \(detail.amount)만원 드려요
+            """
+        self.periodLabel.text = detail.period
+        self.conditionLabel.text = detail.condition
+        self.benefitConditionLabel.text = detail.benefitCondition
+        self.benefitDetailLabel.text = detail.benefitDetail
+        self.benefitDateLabel.text = detail.benefitDate
+    }
+}
+```
+
+### 4. A->B View로 데이터 전달하기
+```
+extension CardListViewController {
+.
+.
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //상세화면 전달
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let detailViewController = storyboard.instantiateViewController(identifier: "CardDetailViewController") as? CardDetailViewController else { return }
+        
+        print(creditCardList[indexPath.row])
+        
+        detailViewController.promotionDetail = creditCardList[indexPath.row].promotionDetail
+        self.show(detailViewController, sender: nil)
+        // Delegate 없이 데이터 뒤로 보내는 패턴(Push)
+    }
+.
+.
+}
 ```
