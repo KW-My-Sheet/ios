@@ -76,6 +76,7 @@
 		9B4E799E28CECC5F00E82EE2 = {
 			isa = PBXGroup;
 			children = (
+				9B4E79CC28CEFA8000E82EE2 /* README.md */,
 				9B4E79A928CECC5F00E82EE2 /* Firebase_DB */,
 				9B4E79A828CECC5F00E82EE2 /* Products */,
 				041C94FE737D2B2B27BCE8F4 /* Pods */,
@@ -107,7 +108,6 @@
 				9B4E79B528CECC6400E82EE2 /* LaunchScreen.storyboard */,
 				9B4E79B828CECC6400E82EE2 /* Info.plist */,
 				9B4E79BE28CECF0E00E82EE2 /* GoogleService-Info.plist */,
-				9B4E79CC28CEFA8000E82EE2 /* README.md */,
 			);
 			path = Firebase_DB;
 			sourceTree = "<group>";
