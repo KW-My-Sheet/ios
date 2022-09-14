@@ -18,7 +18,5 @@
 `
 
 
-## Dependency, 의존성이란?
-
--> 
+(Swift) Dependency Injection, 의존성 주입이란? (feat. DIP) - [ref.](https://80000coding.oopy.io/68ee8d89-5d05-449d-87e2-5fba84d604ca)
 
