@@ -42,6 +42,7 @@
 		9BB18FCA28D06D64002EA22C = {
 			isa = PBXGroup;
 			children = (
+				9BB18FDD28D06DAD002EA22C /* README.md */,
 				9BB18FD528D06D64002EA22C /* Dependency Injection */,
 				9BB18FD428D06D64002EA22C /* Products */,
 			);
@@ -59,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				9BB18FD628D06D64002EA22C /* main.swift */,
-				9BB18FDD28D06DAD002EA22C /* README.md */,
 			);
 			path = "Dependency Injection";
 			sourceTree = "<group>";
