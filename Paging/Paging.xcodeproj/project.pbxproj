@@ -16,6 +16,12 @@
 		9B25C82728D34C0C00303B26 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B25C82628D34C0C00303B26 /* README.md */; };
 		9B25C82B28D34E0A00303B26 /* examCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B25C82928D34E0A00303B26 /* examCellTableViewCell.swift */; };
 		9B25C82C28D34E0A00303B26 /* examCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B25C82A28D34E0A00303B26 /* examCellTableViewCell.xib */; };
+		9B9C573928D351A3001819F8 /* DataList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C573828D351A3001819F8 /* DataList.swift */; };
+		9B9C573B28D351F6001819F8 /* DataListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C573A28D351F6001819F8 /* DataListModel.swift */; };
+		9B9C574028D358BF001819F8 /* SectionZeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C573E28D358BF001819F8 /* SectionZeroCell.swift */; };
+		9B9C574128D358BF001819F8 /* SectionZeroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C573F28D358BF001819F8 /* SectionZeroCell.xib */; };
+		9B9C574428D358ED001819F8 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C574228D358ED001819F8 /* LoadingCell.swift */; };
+		9B9C574528D358ED001819F8 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C574328D358ED001819F8 /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		9B25C82628D34C0C00303B26 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9B25C82928D34E0A00303B26 /* examCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examCellTableViewCell.swift; sourceTree = "<group>"; };
 		9B25C82A28D34E0A00303B26 /* examCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = examCellTableViewCell.xib; sourceTree = "<group>"; };
+		9B9C573828D351A3001819F8 /* DataList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataList.swift; sourceTree = "<group>"; };
+		9B9C573A28D351F6001819F8 /* DataListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListModel.swift; sourceTree = "<group>"; };
+		9B9C573E28D358BF001819F8 /* SectionZeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionZeroCell.swift; sourceTree = "<group>"; };
+		9B9C573F28D358BF001819F8 /* SectionZeroCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionZeroCell.xib; sourceTree = "<group>"; };
+		9B9C574228D358ED001819F8 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		9B9C574328D358ED001819F8 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,10 @@
 			children = (
 				9B25C82928D34E0A00303B26 /* examCellTableViewCell.swift */,
 				9B25C82A28D34E0A00303B26 /* examCellTableViewCell.xib */,
+				9B9C573E28D358BF001819F8 /* SectionZeroCell.swift */,
+				9B9C573F28D358BF001819F8 /* SectionZeroCell.xib */,
+				9B9C574228D358ED001819F8 /* LoadingCell.swift */,
+				9B9C574328D358ED001819F8 /* LoadingCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -88,6 +104,8 @@
 		9B25C82D28D3511200303B26 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9B9C573828D351A3001819F8 /* DataList.swift */,
+				9B9C573A28D351F6001819F8 /* DataListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,7 +168,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B9C574528D358ED001819F8 /* LoadingCell.xib in Resources */,
 				9B25C81F28D34BD200303B26 /* LaunchScreen.storyboard in Resources */,
+				9B9C574128D358BF001819F8 /* SectionZeroCell.xib in Resources */,
 				9B25C81C28D34BD200303B26 /* Assets.xcassets in Resources */,
 				9B25C82728D34C0C00303B26 /* README.md in Resources */,
 				9B25C82C28D34E0A00303B26 /* examCellTableViewCell.xib in Resources */,
@@ -165,6 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B9C574028D358BF001819F8 /* SectionZeroCell.swift in Sources */,
+				9B9C573928D351A3001819F8 /* DataList.swift in Sources */,
+				9B9C574428D358ED001819F8 /* LoadingCell.swift in Sources */,
+				9B9C573B28D351F6001819F8 /* DataListModel.swift in Sources */,
 				9B25C82B28D34E0A00303B26 /* examCellTableViewCell.swift in Sources */,
 				9B25C81728D34BC400303B26 /* ViewController.swift in Sources */,
 				9B25C81328D34BC400303B26 /* AppDelegate.swift in Sources */,
