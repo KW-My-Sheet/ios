@@ -54,7 +54,7 @@ var myFirstView : UIView = {
     view.translatesAutoresizingMaskIntoConstraints = false
     view.clipsToBounds = true // corner radius 전용
     return view
-}()
+}() 
 ```
 
 ```
