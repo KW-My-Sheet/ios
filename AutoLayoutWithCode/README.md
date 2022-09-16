@@ -81,3 +81,4 @@ var myFirstView : UIView = {
 }
 ```
 
+[git] github에 잘못 올라간 폴더 및 파일 삭제하기 - [ref.](https://bskyvision.com/entry/github%EC%97%90-%EC%9E%98%EB%AA%BB-%EC%98%AC%EB%9D%BC%EA%B0%84-%ED%8F%B4%EB%8D%94-%EB%B0%8F-%ED%8C%8C%EC%9D%BC-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0)
