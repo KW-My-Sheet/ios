@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+//MARK: - Attribute Inspector
     // 클로저로 뷰를 설정
     var myThirdView : UIView = {
         let view = UIView()
@@ -22,11 +23,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.myFirstView()
+        self.AutoLayout()
     }
     
-    func myFirstView() {
-        
+    
+//MARK: - Size Inspector
+
+    func AutoLayout() {
         // MARK: - First View
         let myFirstView = UIView()
         myFirstView.translatesAutoresizingMaskIntoConstraints = false

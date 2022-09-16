@@ -44,3 +44,4 @@ NSLayoutConstraint.activate([
     mySecondView.heightAnchor.constraint(equalToConstant: 60)
 ])
 ```
+5. Attribute / Size Inspector 나눠서 각각 변수, 함수로 설정하기 
