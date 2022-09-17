@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B541BAE28D57A85000CE295 /* WillBeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B541BAD28D57A85000CE295 /* WillBeTableView.swift */; };
 		9B666FE228D495B8000CC009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B666FE128D495B8000CC009 /* AppDelegate.swift */; };
 		9B666FE428D495B8000CC009 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B666FE328D495B8000CC009 /* SceneDelegate.swift */; };
 		9B666FE628D495B8000CC009 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B666FE528D495B8000CC009 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B541BAD28D57A85000CE295 /* WillBeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillBeTableView.swift; sourceTree = "<group>"; };
 		9B666FDE28D495B8000CC009 /* AutoLayoutWithCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutWithCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B666FE128D495B8000CC009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B666FE328D495B8000CC009 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				9B666FEA28D495BD000CC009 /* Assets.xcassets */,
 				9B666FEC28D495BD000CC009 /* LaunchScreen.storyboard */,
 				9B666FEF28D495BD000CC009 /* Info.plist */,
+				9B541BAD28D57A85000CE295 /* WillBeTableView.swift */,
 			);
 			path = AutoLayoutWithCode;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				9B666FF628D497A8000CC009 /* myCircleView.swift in Sources */,
 				9B666FE628D495B8000CC009 /* ViewController.swift in Sources */,
 				9B666FE228D495B8000CC009 /* AppDelegate.swift in Sources */,
+				9B541BAE28D57A85000CE295 /* WillBeTableView.swift in Sources */,
 				9B666FE428D495B8000CC009 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,6 +29,29 @@ class ViewController: UIViewController {
         return view
     }()
     
+    var TestButton : UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.clipsToBounds = true // corner radius 전용
+        button.layer.cornerRadius = 5
+        button.setTitleColor(.red, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 22.0, weight: .bold)
+        button.backgroundColor = .green
+        button.setTitle("TB", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        return button
+    }()
+    
+    @objc func buttonAction(sender: UIButton!) {
+        print("Button tapped")
+        self.pushViewController()
+    }
+    
+    func pushViewController() {
+        let viewController = ViewControllerOne(nibName: "WillBeTableView", bundle: nil)
+        self.navigationController?.pushViewController(WillBeTableView, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.autoLayout()
@@ -36,7 +59,7 @@ class ViewController: UIViewController {
     
 //MARK: - Size Inspector
     func autoLayout() {
-        // MARK: - First View
+        // MARK:  First View
         self.view.addSubview(myFirstView)
         NSLayoutConstraint.activate([
             myFirstView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor), // x축 위치
@@ -45,7 +68,7 @@ class ViewController: UIViewController {
             myFirstView.heightAnchor.constraint(equalToConstant: 100)
         ])
         
-        // MARK: - Second View
+        // MARK:  Second View
         self.view.addSubview(mySecondView)
         NSLayoutConstraint.activate([
             mySecondView.leadingAnchor.constraint(equalTo: myFirstView.leadingAnchor, constant: 10),
@@ -53,12 +76,20 @@ class ViewController: UIViewController {
             mySecondView.widthAnchor.constraint(equalToConstant: 60),
             mySecondView.heightAnchor.constraint(equalToConstant: 60)
         ])
+        
+        self.myFirstView.addSubview(TestButton)
+        NSLayoutConstraint.activate([
+            TestButton.centerXAnchor.constraint(equalTo: self.myFirstView.centerXAnchor),
+            TestButton.centerYAnchor.constraint(equalTo: self.myFirstView.centerYAnchor),
+            TestButton.widthAnchor.constraint(equalToConstant: 60),
+            TestButton.heightAnchor.constraint(equalToConstant: 60)
+        ])
     }
 }
 
 #if DEBUG
 import SwiftUI
-struct ViewControllerRepresentable: UIViewControllerRepresentable {
+struct ViewController_Representable: UIViewControllerRepresentable {
     
     func updateUIViewController(_ uiView: UIViewController,context: Context) {
         // leave this empty
@@ -69,12 +100,12 @@ struct ViewControllerRepresentable: UIViewControllerRepresentable {
     }
 }
 @available(iOS 13.0, *)
-struct ViewControllerRepresentable_PreviewProvider: PreviewProvider {
+struct ViewController_Representable_PreviewProvider: PreviewProvider {
     static var previews: some View {
         Group {
-            ViewControllerRepresentable()
+            ViewController_Representable()
                 .ignoresSafeArea()
-                .previewDisplayName(/*@START_MENU_TOKEN@*/"Preview"/*@END_MENU_TOKEN@*/)
+                .previewDisplayName("ViewController")
                 .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro"))
         }
         
