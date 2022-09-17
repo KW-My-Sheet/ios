@@ -86,3 +86,13 @@ var myFirstView : UIView = {
 화면전환(Push)을 위한 NavigationController 설정 - [ref.](https://beingdesigner.tistory.com/47)
 
 Push ViewController without storyboard - [ref.](https://stackoverflow.com/questions/52862646/push-viewcontroller-without-storyboard)
+
+```
+(1) Scene Delegate에서 Navigation Controller 설정
+(2) Button -> Push로 화면전환하기
+```
+[iOS] UIRefreshControl의 발견 - [ref.](https://furang-note.tistory.com/13)
+
+[SWIFT] Create UITableView programmatically, 테이블 뷰 코드로 - [ref.](https://g-y-e-o-m.tistory.com/66)
+
+[iOS - UI Custom] 12. table view (programmatically) - [ref.](https://ios-development.tistory.com/71)

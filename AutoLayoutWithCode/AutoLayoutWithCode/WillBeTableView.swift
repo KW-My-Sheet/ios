@@ -9,32 +9,86 @@ import UIKit
 
 class WillBeTableView: UIViewController {
 
-    var TestView : UIView = {
-        let view = UIView()
-        view.backgroundColor = .gray
-        view.layer.cornerRadius = 5
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.clipsToBounds = true // corner radius 전용
-        return view
+    let refresh = UIRefreshControl()
+
+    var myTableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TableViewCell")
+        // 따로 Cell 안만들고 Default Cell 등록해주기
+        tableView.separatorStyle = .none
+        return tableView
     }()
+    
+    let items: [String] = ["한꼬마", "두꼬마", "세꼬마"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
+        self.myTableView.dataSource = self
+        self.myTableView.delegate = self
         self.autoLayout()
+        self.initRefresh()
     }
-    
+
+}
+
+//MARK: - AutoLayout
+extension WillBeTableView {
     func autoLayout() {
-        // MARK: - First View
-        self.view.addSubview(TestView)
-        NSLayoutConstraint.activate([
-            TestView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            TestView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 200),
-            TestView.widthAnchor.constraint(equalToConstant: 100),
-            TestView.heightAnchor.constraint(equalToConstant: 100)
-        ])
+        self.view.addSubview(self.myTableView)
+        self.view.addConstraint(NSLayoutConstraint(item: self.myTableView,
+                                                   attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top,
+                                                   multiplier: 1.0, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.myTableView,
+                                                   attribute: .bottom, relatedBy: .equal, toItem: self.view,
+                                                   attribute: .bottom, multiplier: 1.0, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.myTableView,
+                                                   attribute: .leading, relatedBy: .equal, toItem: self.view,
+                                                   attribute: .leading, multiplier: 1.0, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.myTableView,
+                                                   attribute: .trailing, relatedBy: .equal, toItem: self.view,
+                                                   attribute: .trailing, multiplier: 1.0, constant: 0))
+    }
+}
+
+//MARK: - Refresh Control
+extension WillBeTableView {
+    func initRefresh() {
+        refresh.addTarget(self, action: #selector(refreshTable(refresh:)), for: .valueChanged)
+        refresh.backgroundColor = UIColor.clear
+        self.myTableView.refreshControl = refresh
+    }
+ 
+    @objc func refreshTable(refresh: UIRefreshControl) {
+        print("refreshTable")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.myTableView.reloadData()
+            refresh.endRefreshing()
+        }
     }
     
+    //MARK:  UIRefreshControl of ScrollView
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        if(velocity.y < -0.1) {
+            self.refreshTable(refresh: self.refresh)
+        }
+    }
+}
+
+//MARK: - TableView Delegate
+extension WillBeTableView : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as UITableViewCell
+        
+        cell.textLabel?.text = items[indexPath.row]
+        
+        return cell
+    }
 }
 
 #if DEBUG
