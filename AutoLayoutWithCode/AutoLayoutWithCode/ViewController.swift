@@ -44,16 +44,13 @@ class ViewController: UIViewController {
     
     @objc func buttonAction(sender: UIButton!) {
         print("Button tapped")
-        self.pushViewController()
-    }
-    
-    func pushViewController() {
-        let viewController = ViewControllerOne(nibName: "WillBeTableView", bundle: nil)
-        self.navigationController?.pushViewController(WillBeTableView, animated: true)
+        let vc = WillBeTableView()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
         self.autoLayout()
     }
     
