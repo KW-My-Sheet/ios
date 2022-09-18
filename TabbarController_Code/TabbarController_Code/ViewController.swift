@@ -8,13 +8,51 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var TestButton : UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.clipsToBounds = true // corner radius 전용
+        button.layer.cornerRadius = 5
+        button.setTitleColor(.red, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 22.0, weight: .bold)
+        button.backgroundColor = .green
+        button.setTitle("Login", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        return button
+    }()
+    
+    @objc func buttonAction(sender: UIButton!) {
+        print("Button tapped")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .gray
+        self.autoLayout()
     }
+    
+    
+}
+
+extension ViewController {
+    func autoLayout() {
+        self.view.addSubview(self.TestButton)
+        
+        NSLayoutConstraint.activate([
+            self.TestButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            self.TestButton.widthAnchor.constraint(equalToConstant: 60),
+            self.TestButton.heightAnchor.constraint(equalToConstant: 60)
+        ])
 
 
+        self.view.addConstraint(NSLayoutConstraint(item: self.TestButton,
+                                                   attribute: .leading, relatedBy: .equal, toItem: self.view,
+                                                   attribute: .leading, multiplier: 1.0, constant: 20))
+        self.view.addConstraint(NSLayoutConstraint(item: self.TestButton,
+                                                   attribute: .trailing, relatedBy: .equal, toItem: self.view,
+                                                   attribute: .trailing, multiplier: 1.0, constant: -20))
+    }
 }
 
 #if DEBUG
