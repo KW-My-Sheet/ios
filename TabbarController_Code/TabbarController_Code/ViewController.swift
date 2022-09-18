@@ -22,32 +22,54 @@ class ViewController: UIViewController {
         return button
     }()
     
+    //MARK: button 눌렀을 때 Present로 띄우기
     @objc func buttonAction(sender: UIButton!) {
         print("Button tapped")
         
+        // MARK: Tabbar Controller에 들어갈 ViewControlloers 정의하기(각각 Navi - Root VC임)
         let tabbarController = UITabBarController()
-        let vc1 = FirstViewController()
-        let vc2 = SecondViewController()
-        let vc3 = ThirdViewController()
+        let vc1 = UINavigationController(rootViewController: FirstViewController())
+        let vc2 = UINavigationController(rootViewController: SecondViewController())
+        let vc3 = UINavigationController(rootViewController: ThirdViewController())
+
+        // MARK: 각 ViewControllers들의 Navigation Title
+        vc1.title = "Home"
+        vc2.title = "Contact"
+        vc3.title = "Setting"
+        
         tabbarController.setViewControllers([vc1,vc2,vc3], animated: false)
-        navigationController?.pushViewController(tabbarController, animated: true)
+        
+        // MARK: Tabbar Item들의 title과 image 넣는 과정 
+        guard let items = tabbarController.tabBar.items else {
+            return
+        }
+        
+        let images = ["house","bell","gear"]
+        
+        for i in 0..<items.count {
+            items[i].badgeValue = "1"
+            items[i].image = UIImage(systemName: images[i])
+        }
+        
+//      navigationController?.pushViewController(tabbarController, animated: true)
+        tabbarController.modalPresentationStyle = .fullScreen
+        present(tabbarController, animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .gray
-        self.navigationController?.navigationBar.isHidden = true
         self.autoLayout()
     }
     
 }
 
 
-
 class FirstViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .orange
+        title = "Home"
     }
 }
 
@@ -55,6 +77,7 @@ class SecondViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
+        title = "Contact"
     }
 }
 
@@ -62,6 +85,7 @@ class ThirdViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
+        title = "Setting"
     }
 }
 
