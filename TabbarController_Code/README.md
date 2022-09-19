@@ -8,3 +8,12 @@
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
     </objects>
 </document>
+
+# Tabbar Controller Programmailty
+
+1. Tabbar Controller (RootViewController Setting)
+2. View Controllers Title
+3. Tabar Item Title
+4. Badge
+
+Swift: Create Tab Bar Controller Programmatically (Swift 5, Xcode 11) - 2020 iOS - [ref.](https://www.youtube.com/watch?v=6CEWHlM8Ecw)
