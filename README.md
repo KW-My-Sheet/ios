@@ -22,3 +22,11 @@
 - [iOS - swift] 서버 푸시 (remote notification), APNs (Apple Push Notification service) - [ref.](https://ios-development.tistory.com/264)
 - Push Notification Not Working iOS Using FCM - [ref.](https://stackoverflow.com/questions/66152574/push-notification-not-working-ios-using-fcm)
 - (ios/swift) 파이어베이스 푸시 알림 (firebase push) 환경 적용 방법 - [ref.](https://kkh0977.tistory.com/1399)
+
++ 구독 기능 추가 
+```
+Messaging.messaging().subscribe(toTopic: "KWCL") { error in
+    print("Subscribed to topic")
+}
+```
+-> 토큰 발급에 상관없이 해당 Topic을 갖고 있는 모든 기기에 테스트 메세지가 전달
