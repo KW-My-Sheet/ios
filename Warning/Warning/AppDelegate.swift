@@ -32,19 +32,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
     
-        //FCM 현재 등록 토큰 확인
-//        Messaging.messaging().token { token, error in
-//            if let error = error {
-//                print("ERROR|FCM 등록토큰 가져오기: \(error) ")
-//            } else if let token = token {
-//                print("FCM 등록토큰: \(token)")
-//            }
-//        }
-        
-        Messaging.messaging().subscribe(toTopic: "KWCL") { error in
-            print("Subscribed to topic")
+//        FCM 현재 등록 토큰 확인
+        Messaging.messaging().token { token, error in
+            if let error = error {
+                print("ERROR|FCM 등록토큰 가져오기: \(error) ")
+            } else if let token = token {
+                print("FCM 등록토큰: \(token)")
+            }
         }
         
+//        Messaging.messaging().subscribe(toTopic: "KWCL") { error in
+//            print("Subscribed to topic")
+//        }
+//        
         return true
     }
 
@@ -113,7 +113,7 @@ extension AppDelegate: MessagingDelegate {
     //FCM 토큰 갱신 시점 확인
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
         guard let token = fcmToken else { return }
-//        print("FCM 등록토큰 갱신: \(token)")
+        print("FCM 등록토큰 갱신: \(token)")
     }
 }
 
