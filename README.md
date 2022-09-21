@@ -30,3 +30,12 @@ Messaging.messaging().subscribe(toTopic: "KWCL") { error in
 }
 ```
 -> 토큰 발급에 상관없이 해당 Topic을 갖고 있는 모든 기기에 테스트 메세지가 전달
+
++ API 이용해서 푸시알림
+
+1. Back Ground에서도 알림 감
+2. [POST] 기기별 토큰 값을 Body로 넣어줘야함(+메세지도) 해당 앱을 설치할 때마다 재 생성됨
+3. 24시간 마다 재 생성되는 Authrization Refresh 토큰을 반영해줘야함.
+
+- OAuth 2.0 Playground - [ref.](https://developers.google.com/oauthplayground/?code=4/0ARtbsJqOe8GBsH-Xr1DjTxXUmUuu4G5XoT0h4TY_SN2VPKyT3T_3dvwmYZcLnUPj4GjRiw&scope=https://www.googleapis.com/auth/cloud-platform)
+- FCM Push Notification(HTTP v1) with OAuth 2.0 Playground / Postman / Terminal - Part2 - [ref.](https://soulduse.tistory.com/95)
