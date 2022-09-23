@@ -17,6 +17,17 @@
 4. 서버에서 자리 없음을 알림 -> APNs는 이를 인식하여 Device에 전송 -> Push Notification 
 -> 이때 토큰 발급 및 APNs에서 받은 토큰으로 Device에 알림을 주는 걸 Firebase가 대신해줌
 
+# 열람실 자리 확인하기
+1. 보호되지 않은 url은 Xcode에서 실행되지 않는다. 
+-> 전체 HTTP 를 허용하는 메소드를 info.plist에 적어주어야 한다. (Info.plist → Open As → Source Code)
+```
+<key>NSAppTransportSecurity</key>
+    <dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+    </dict>
+``` 
+
 참고자료
 - [iOS Swift] FCM(Firebase Cloud Messaging), Push 메시지 설정해보기 - [ref.](https://medium.com/@jang.wangsu/ios-swift-fcm-firebase-cloud-messaging-push-%EB%A9%94%EC%8B%9C%EC%A7%80-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-852a9af23b96)
 - [iOS - swift] 서버 푸시 (remote notification), APNs (Apple Push Notification service) - [ref.](https://ios-development.tistory.com/264)
