@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B224F9428D865EF000A9321 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B224F9328D865EF000A9321 /* README.md */; };
+		9B51310828DEDD290071FE51 /* RoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310728DEDD290071FE51 /* RoomInfo.swift */; };
 		9B6A2D8428DDE62B005AC257 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6A2D8328DDE62B005AC257 /* MainViewController.swift */; };
 		9B6A2D8628DDE6A9005AC257 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6A2D8528DDE6A9005AC257 /* SecondViewController.swift */; };
 		9B6A2D8828DDE6C5005AC257 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6A2D8728DDE6C5005AC257 /* ThirdViewController.swift */; };
@@ -27,6 +28,7 @@
 		65357AAE30368B4517B947D8 /* Pods-Warning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Warning.debug.xcconfig"; path = "Target Support Files/Pods-Warning/Pods-Warning.debug.xcconfig"; sourceTree = "<group>"; };
 		9B224F9228D865DE000A9321 /* Warning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Warning.entitlements; sourceTree = "<group>"; };
 		9B224F9328D865EF000A9321 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9B51310728DEDD290071FE51 /* RoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomInfo.swift; sourceTree = "<group>"; };
 		9B6A2D8328DDE62B005AC257 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9B6A2D8528DDE6A9005AC257 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9B6A2D8728DDE6C5005AC257 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9B51310628DEDCEB0071FE51 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9B51310728DEDD290071FE51 /* RoomInfo.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		9B784B8B28D861B20087040D = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		9B784B9628D861B20087040D /* Warning */ = {
 			isa = PBXGroup;
 			children = (
+				9B51310628DEDCEB0071FE51 /* Configuration */,
 				9B224F9228D865DE000A9321 /* Warning.entitlements */,
 				9B784B9728D861B20087040D /* AppDelegate.swift */,
 				9B784B9928D861B20087040D /* SceneDelegate.swift */,
@@ -229,6 +240,7 @@
 				9B784B9828D861B20087040D /* AppDelegate.swift in Sources */,
 				9B784B9A28D861B20087040D /* SceneDelegate.swift in Sources */,
 				9B6A2D8628DDE6A9005AC257 /* SecondViewController.swift in Sources */,
+				9B51310828DEDD290071FE51 /* RoomInfo.swift in Sources */,
 				9B6A2D8828DDE6C5005AC257 /* ThirdViewController.swift in Sources */,
 				9B6A2D8428DDE62B005AC257 /* MainViewController.swift in Sources */,
 			);
