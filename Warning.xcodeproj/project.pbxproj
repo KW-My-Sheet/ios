@@ -18,6 +18,10 @@
 		9B784B9F28D861B20087040D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B784B9D28D861B20087040D /* Main.storyboard */; };
 		9B784BA128D861B70087040D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B784BA028D861B70087040D /* Assets.xcassets */; };
 		9B784BA428D861B70087040D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B784BA228D861B70087040D /* LaunchScreen.storyboard */; };
+		9B8B43C728DFE71C001BDD6C /* Reserve_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B43C628DFE71C001BDD6C /* Reserve_api.swift */; };
+		9B8B43C928DFE733001BDD6C /* Reserve_stc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B43C828DFE733001BDD6C /* Reserve_stc.swift */; };
+		9B8B43CD28DFE838001BDD6C /* ReserveInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B43CC28DFE838001BDD6C /* ReserveInfo.swift */; };
+		9B8B43CF28DFECE5001BDD6C /* ReserveDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B43CE28DFECE5001BDD6C /* ReserveDetail.swift */; };
 		9BD3492428D88430000B4A5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3492328D88430000B4A5C /* GoogleService-Info.plist */; };
 		B9A780937BE41D610EF5514A /* Pods_Warning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D79D28EBE4AE124C570841 /* Pods_Warning.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +44,10 @@
 		9B784BA028D861B70087040D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B784BA328D861B70087040D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B784BA528D861B70087040D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B8B43C628DFE71C001BDD6C /* Reserve_api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reserve_api.swift; sourceTree = "<group>"; };
+		9B8B43C828DFE733001BDD6C /* Reserve_stc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reserve_stc.swift; sourceTree = "<group>"; };
+		9B8B43CC28DFE838001BDD6C /* ReserveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveInfo.swift; sourceTree = "<group>"; };
+		9B8B43CE28DFECE5001BDD6C /* ReserveDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveDetail.swift; sourceTree = "<group>"; };
 		9BD3492328D88430000B4A5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +77,7 @@
 			children = (
 				9B51310728DEDD290071FE51 /* RoomInfo.swift */,
 				9B51310928DEDFAC0071FE51 /* Color.swift */,
+				9B8B43CC28DFE838001BDD6C /* ReserveInfo.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 		9B784B9628D861B20087040D /* Warning */ = {
 			isa = PBXGroup;
 			children = (
+				9B8B43C528DFE6FE001BDD6C /* Network */,
 				9B51310628DEDCEB0071FE51 /* Configuration */,
 				9B224F9228D865DE000A9321 /* Warning.entitlements */,
 				9B784B9728D861B20087040D /* AppDelegate.swift */,
@@ -102,6 +112,7 @@
 				9BD3492328D88430000B4A5C /* GoogleService-Info.plist */,
 				9B784B9B28D861B20087040D /* ViewController.swift */,
 				9B784B9D28D861B20087040D /* Main.storyboard */,
+				9B8B43CE28DFECE5001BDD6C /* ReserveDetail.swift */,
 				9B51310B28DEF0910071FE51 /* SettingViewController.swift */,
 				9B6A2D8328DDE62B005AC257 /* MainViewController.swift */,
 				9B784BA028D861B70087040D /* Assets.xcassets */,
@@ -109,6 +120,15 @@
 				9B784BA528D861B70087040D /* Info.plist */,
 			);
 			path = Warning;
+			sourceTree = "<group>";
+		};
+		9B8B43C528DFE6FE001BDD6C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9B8B43C628DFE71C001BDD6C /* Reserve_api.swift */,
+				9B8B43C828DFE733001BDD6C /* Reserve_stc.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		9E52AEC0D8BD542DB2BA67ED /* Frameworks */ = {
@@ -236,10 +256,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8B43C928DFE733001BDD6C /* Reserve_stc.swift in Sources */,
 				9B784B9C28D861B20087040D /* ViewController.swift in Sources */,
 				9B784B9828D861B20087040D /* AppDelegate.swift in Sources */,
+				9B8B43CF28DFECE5001BDD6C /* ReserveDetail.swift in Sources */,
 				9B784B9A28D861B20087040D /* SceneDelegate.swift in Sources */,
+				9B8B43CD28DFE838001BDD6C /* ReserveInfo.swift in Sources */,
 				9B51310828DEDD290071FE51 /* RoomInfo.swift in Sources */,
+				9B8B43C728DFE71C001BDD6C /* Reserve_api.swift in Sources */,
 				9B51310A28DEDFAC0071FE51 /* Color.swift in Sources */,
 				9B51310C28DEF0910071FE51 /* SettingViewController.swift in Sources */,
 				9B6A2D8428DDE62B005AC257 /* MainViewController.swift in Sources */,
