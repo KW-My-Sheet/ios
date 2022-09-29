@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B224F9428D865EF000A9321 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B224F9328D865EF000A9321 /* README.md */; };
+		9B4D0B2028E5DBDB00983E86 /* ComponentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D0B1F28E5DBDA00983E86 /* ComponentSetting.swift */; };
 		9B51310828DEDD290071FE51 /* RoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310728DEDD290071FE51 /* RoomInfo.swift */; };
 		9B51310A28DEDFAC0071FE51 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310928DEDFAC0071FE51 /* Color.swift */; };
 		9B51310C28DEF0910071FE51 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310B28DEF0910071FE51 /* SettingViewController.swift */; };
@@ -34,6 +35,7 @@
 		65357AAE30368B4517B947D8 /* Pods-Warning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Warning.debug.xcconfig"; path = "Target Support Files/Pods-Warning/Pods-Warning.debug.xcconfig"; sourceTree = "<group>"; };
 		9B224F9228D865DE000A9321 /* Warning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Warning.entitlements; sourceTree = "<group>"; };
 		9B224F9328D865EF000A9321 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9B4D0B1F28E5DBDA00983E86 /* ComponentSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSetting.swift; sourceTree = "<group>"; };
 		9B51310728DEDD290071FE51 /* RoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomInfo.swift; sourceTree = "<group>"; };
 		9B51310928DEDFAC0071FE51 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9B51310B28DEF0910071FE51 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				9B51310728DEDD290071FE51 /* RoomInfo.swift */,
 				9B51310928DEDFAC0071FE51 /* Color.swift */,
 				9B8B43CC28DFE838001BDD6C /* ReserveInfo.swift */,
+				9B4D0B1F28E5DBDA00983E86 /* ComponentSetting.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				9B784B9C28D861B20087040D /* ViewController.swift in Sources */,
 				9B8B43DC28E15AF9001BDD6C /* SettingCell.swift in Sources */,
 				9B784B9828D861B20087040D /* AppDelegate.swift in Sources */,
+				9B4D0B2028E5DBDB00983E86 /* ComponentSetting.swift in Sources */,
 				9B8B43CF28DFECE5001BDD6C /* ReserveDetail.swift in Sources */,
 				9B784B9A28D861B20087040D /* SceneDelegate.swift in Sources */,
 				9B8B43CD28DFE838001BDD6C /* ReserveInfo.swift in Sources */,
