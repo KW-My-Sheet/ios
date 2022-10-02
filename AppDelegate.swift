@@ -10,6 +10,7 @@ import CoreData
 import Firebase
 import FirebaseMessaging
 import UserNotifications
+//import GoogleMobileAds
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,22 +26,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         application.registerForRemoteNotifications()
         
+        
         return true
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        GADMobileAds.sharedInstance().start(completionHandler: nil)
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
-        
-        //FCM 현재 등록 토큰 확인
+    
         Messaging.messaging().token { token, error in
             if let error = error {
                 print("ERROR|FCM 등록토큰 가져오기: \(error) ")
             } else if let token = token {
                 print("FCM 등록토큰: \(token)")
+                UserDevice.Token = token
             }
         }
-        
+
         return true
     }
 
@@ -111,6 +114,7 @@ extension AppDelegate: MessagingDelegate {
         guard let token = fcmToken else { return }
         print("FCM 등록토큰 갱신: \(token)")
     }
+    
 }
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
