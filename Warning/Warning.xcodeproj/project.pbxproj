@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B224F9428D865EF000A9321 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B224F9328D865EF000A9321 /* README.md */; };
 		9B4D0B2028E5DBDB00983E86 /* ComponentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D0B1F28E5DBDA00983E86 /* ComponentSetting.swift */; };
 		9B51310828DEDD290071FE51 /* RoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310728DEDD290071FE51 /* RoomInfo.swift */; };
 		9B51310A28DEDFAC0071FE51 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310928DEDFAC0071FE51 /* Color.swift */; };
@@ -25,6 +24,7 @@
 		9B8B43CF28DFECE5001BDD6C /* ReserveDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B43CE28DFECE5001BDD6C /* ReserveDetail.swift */; };
 		9B8B43DC28E15AF9001BDD6C /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B43DA28E15AF9001BDD6C /* SettingCell.swift */; };
 		9B8B43DD28E15AF9001BDD6C /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8B43DB28E15AF9001BDD6C /* SettingCell.xib */; };
+		9BB4199128E993B500A81B99 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9BB4199028E993B500A81B99 /* README.md */; };
 		9BD3492428D88430000B4A5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3492328D88430000B4A5C /* GoogleService-Info.plist */; };
 		B9A780937BE41D610EF5514A /* Pods_Warning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D79D28EBE4AE124C570841 /* Pods_Warning.framework */; };
 /* End PBXBuildFile section */
@@ -34,7 +34,6 @@
 		486BDBBC505A96BC149CCEFC /* Pods-Warning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Warning.release.xcconfig"; path = "Target Support Files/Pods-Warning/Pods-Warning.release.xcconfig"; sourceTree = "<group>"; };
 		65357AAE30368B4517B947D8 /* Pods-Warning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Warning.debug.xcconfig"; path = "Target Support Files/Pods-Warning/Pods-Warning.debug.xcconfig"; sourceTree = "<group>"; };
 		9B224F9228D865DE000A9321 /* Warning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Warning.entitlements; sourceTree = "<group>"; };
-		9B224F9328D865EF000A9321 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9B4D0B1F28E5DBDA00983E86 /* ComponentSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSetting.swift; sourceTree = "<group>"; };
 		9B51310728DEDD290071FE51 /* RoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomInfo.swift; sourceTree = "<group>"; };
 		9B51310928DEDFAC0071FE51 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		9B8B43CE28DFECE5001BDD6C /* ReserveDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveDetail.swift; sourceTree = "<group>"; };
 		9B8B43DA28E15AF9001BDD6C /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		9B8B43DB28E15AF9001BDD6C /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
+		9BB4199028E993B500A81B99 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9BD3492328D88430000B4A5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +85,7 @@
 				9B51310928DEDFAC0071FE51 /* Color.swift */,
 				9B8B43CC28DFE838001BDD6C /* ReserveInfo.swift */,
 				9B4D0B1F28E5DBDA00983E86 /* ComponentSetting.swift */,
+				9BD3492328D88430000B4A5C /* GoogleService-Info.plist */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -92,7 +93,7 @@
 		9B784B8B28D861B20087040D = {
 			isa = PBXGroup;
 			children = (
-				9B224F9328D865EF000A9321 /* README.md */,
+				9BB4199028E993B500A81B99 /* README.md */,
 				9B784B9628D861B20087040D /* Warning */,
 				9B784B9528D861B20087040D /* Products */,
 				3149C74875AA282C48EC50D9 /* Pods */,
@@ -117,7 +118,6 @@
 				9B224F9228D865DE000A9321 /* Warning.entitlements */,
 				9B784B9728D861B20087040D /* AppDelegate.swift */,
 				9B784B9928D861B20087040D /* SceneDelegate.swift */,
-				9BD3492328D88430000B4A5C /* GoogleService-Info.plist */,
 				9B784B9B28D861B20087040D /* ViewController.swift */,
 				9B784B9D28D861B20087040D /* Main.storyboard */,
 				9B8B43CE28DFECE5001BDD6C /* ReserveDetail.swift */,
@@ -224,8 +224,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB4199128E993B500A81B99 /* README.md in Resources */,
 				9B784BA428D861B70087040D /* LaunchScreen.storyboard in Resources */,
-				9B224F9428D865EF000A9321 /* README.md in Resources */,
 				9BD3492428D88430000B4A5C /* GoogleService-Info.plist in Resources */,
 				9B784BA128D861B70087040D /* Assets.xcassets in Resources */,
 				9B8B43DD28E15AF9001BDD6C /* SettingCell.xib in Resources */,
