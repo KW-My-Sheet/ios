@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		9B224F9428D865EF000A9321 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B224F9328D865EF000A9321 /* README.md */; };
+		9B4D0B2028E5DBDB00983E86 /* ComponentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D0B1F28E5DBDA00983E86 /* ComponentSetting.swift */; };
+		9B51310828DEDD290071FE51 /* RoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310728DEDD290071FE51 /* RoomInfo.swift */; };
+		9B51310A28DEDFAC0071FE51 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310928DEDFAC0071FE51 /* Color.swift */; };
+		9B51310C28DEF0910071FE51 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310B28DEF0910071FE51 /* SettingViewController.swift */; };
+		9B6A2D8428DDE62B005AC257 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6A2D8328DDE62B005AC257 /* MainViewController.swift */; };
 		9B784B9828D861B20087040D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B784B9728D861B20087040D /* AppDelegate.swift */; };
 		9B784B9A28D861B20087040D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B784B9928D861B20087040D /* SceneDelegate.swift */; };
 		9B784B9C28D861B20087040D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B784B9B28D861B20087040D /* ViewController.swift */; };
 		9B784B9F28D861B20087040D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B784B9D28D861B20087040D /* Main.storyboard */; };
 		9B784BA128D861B70087040D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B784BA028D861B70087040D /* Assets.xcassets */; };
 		9B784BA428D861B70087040D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B784BA228D861B70087040D /* LaunchScreen.storyboard */; };
+		9B8B43C728DFE71C001BDD6C /* Reserve_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B43C628DFE71C001BDD6C /* Reserve_api.swift */; };
+		9B8B43C928DFE733001BDD6C /* Reserve_stc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B43C828DFE733001BDD6C /* Reserve_stc.swift */; };
+		9B8B43CD28DFE838001BDD6C /* ReserveInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B43CC28DFE838001BDD6C /* ReserveInfo.swift */; };
+		9B8B43CF28DFECE5001BDD6C /* ReserveDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B43CE28DFECE5001BDD6C /* ReserveDetail.swift */; };
+		9B8B43DC28E15AF9001BDD6C /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B43DA28E15AF9001BDD6C /* SettingCell.swift */; };
+		9B8B43DD28E15AF9001BDD6C /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8B43DB28E15AF9001BDD6C /* SettingCell.xib */; };
 		9BD3492428D88430000B4A5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3492328D88430000B4A5C /* GoogleService-Info.plist */; };
 		B9A780937BE41D610EF5514A /* Pods_Warning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D79D28EBE4AE124C570841 /* Pods_Warning.framework */; };
 /* End PBXBuildFile section */
@@ -24,6 +35,11 @@
 		65357AAE30368B4517B947D8 /* Pods-Warning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Warning.debug.xcconfig"; path = "Target Support Files/Pods-Warning/Pods-Warning.debug.xcconfig"; sourceTree = "<group>"; };
 		9B224F9228D865DE000A9321 /* Warning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Warning.entitlements; sourceTree = "<group>"; };
 		9B224F9328D865EF000A9321 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9B4D0B1F28E5DBDA00983E86 /* ComponentSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSetting.swift; sourceTree = "<group>"; };
+		9B51310728DEDD290071FE51 /* RoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomInfo.swift; sourceTree = "<group>"; };
+		9B51310928DEDFAC0071FE51 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9B51310B28DEF0910071FE51 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9B6A2D8328DDE62B005AC257 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9B784B9428D861B20087040D /* Warning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B784B9728D861B20087040D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B784B9928D861B20087040D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +48,12 @@
 		9B784BA028D861B70087040D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B784BA328D861B70087040D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B784BA528D861B70087040D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B8B43C628DFE71C001BDD6C /* Reserve_api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reserve_api.swift; sourceTree = "<group>"; };
+		9B8B43C828DFE733001BDD6C /* Reserve_stc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reserve_stc.swift; sourceTree = "<group>"; };
+		9B8B43CC28DFE838001BDD6C /* ReserveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveInfo.swift; sourceTree = "<group>"; };
+		9B8B43CE28DFECE5001BDD6C /* ReserveDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveDetail.swift; sourceTree = "<group>"; };
+		9B8B43DA28E15AF9001BDD6C /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		9B8B43DB28E15AF9001BDD6C /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 		9BD3492328D88430000B4A5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +78,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9B51310628DEDCEB0071FE51 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9B51310728DEDD290071FE51 /* RoomInfo.swift */,
+				9B51310928DEDFAC0071FE51 /* Color.swift */,
+				9B8B43CC28DFE838001BDD6C /* ReserveInfo.swift */,
+				9B4D0B1F28E5DBDA00983E86 /* ComponentSetting.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		9B784B8B28D861B20087040D = {
 			isa = PBXGroup;
 			children = (
@@ -78,17 +111,49 @@
 		9B784B9628D861B20087040D /* Warning */ = {
 			isa = PBXGroup;
 			children = (
+				9B8B43D028E15A59001BDD6C /* Setting */,
+				9B8B43C528DFE6FE001BDD6C /* Network */,
+				9B51310628DEDCEB0071FE51 /* Configuration */,
 				9B224F9228D865DE000A9321 /* Warning.entitlements */,
 				9B784B9728D861B20087040D /* AppDelegate.swift */,
 				9B784B9928D861B20087040D /* SceneDelegate.swift */,
 				9BD3492328D88430000B4A5C /* GoogleService-Info.plist */,
 				9B784B9B28D861B20087040D /* ViewController.swift */,
 				9B784B9D28D861B20087040D /* Main.storyboard */,
+				9B8B43CE28DFECE5001BDD6C /* ReserveDetail.swift */,
+				9B6A2D8328DDE62B005AC257 /* MainViewController.swift */,
 				9B784BA028D861B70087040D /* Assets.xcassets */,
 				9B784BA228D861B70087040D /* LaunchScreen.storyboard */,
 				9B784BA528D861B70087040D /* Info.plist */,
 			);
 			path = Warning;
+			sourceTree = "<group>";
+		};
+		9B8B43C528DFE6FE001BDD6C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9B8B43C628DFE71C001BDD6C /* Reserve_api.swift */,
+				9B8B43C828DFE733001BDD6C /* Reserve_stc.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9B8B43D028E15A59001BDD6C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				9B8B43D828E15ADC001BDD6C /* SettingCells */,
+				9B51310B28DEF0910071FE51 /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		9B8B43D828E15ADC001BDD6C /* SettingCells */ = {
+			isa = PBXGroup;
+			children = (
+				9B8B43DA28E15AF9001BDD6C /* SettingCell.swift */,
+				9B8B43DB28E15AF9001BDD6C /* SettingCell.xib */,
+			);
+			path = SettingCells;
 			sourceTree = "<group>";
 		};
 		9E52AEC0D8BD542DB2BA67ED /* Frameworks */ = {
@@ -163,6 +228,7 @@
 				9B224F9428D865EF000A9321 /* README.md in Resources */,
 				9BD3492428D88430000B4A5C /* GoogleService-Info.plist in Resources */,
 				9B784BA128D861B70087040D /* Assets.xcassets in Resources */,
+				9B8B43DD28E15AF9001BDD6C /* SettingCell.xib in Resources */,
 				9B784B9F28D861B20087040D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,9 +282,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8B43C928DFE733001BDD6C /* Reserve_stc.swift in Sources */,
 				9B784B9C28D861B20087040D /* ViewController.swift in Sources */,
+				9B8B43DC28E15AF9001BDD6C /* SettingCell.swift in Sources */,
 				9B784B9828D861B20087040D /* AppDelegate.swift in Sources */,
+				9B4D0B2028E5DBDB00983E86 /* ComponentSetting.swift in Sources */,
+				9B8B43CF28DFECE5001BDD6C /* ReserveDetail.swift in Sources */,
 				9B784B9A28D861B20087040D /* SceneDelegate.swift in Sources */,
+				9B8B43CD28DFE838001BDD6C /* ReserveInfo.swift in Sources */,
+				9B51310828DEDD290071FE51 /* RoomInfo.swift in Sources */,
+				9B8B43C728DFE71C001BDD6C /* Reserve_api.swift in Sources */,
+				9B51310A28DEDFAC0071FE51 /* Color.swift in Sources */,
+				9B51310C28DEF0910071FE51 /* SettingViewController.swift in Sources */,
+				9B6A2D8428DDE62B005AC257 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

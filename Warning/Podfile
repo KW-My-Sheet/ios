@@ -7,7 +7,8 @@ target 'Warning' do
 
 pod 'Firebase/Analytics'
 pod 'Firebase/Messaging'
-	
+pod 'Google-Mobile-Ads-SDK'
+
   # Pods for Warning
 
 end
