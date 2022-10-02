@@ -9,7 +9,6 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    
     @IBOutlet weak var roomView_1: UIView!
     @IBOutlet weak var roomView_2: UIView!
     @IBOutlet weak var roomView_3: UIView!

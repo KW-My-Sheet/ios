@@ -367,7 +367,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgP-se-cgd">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="732"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <wkWebViewConfiguration key="configuration">
                                             <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -381,7 +381,7 @@
                                     <constraint firstAttribute="trailing" secondItem="JgP-se-cgd" secondAttribute="trailing" id="ZHL-vR-hPJ"/>
                                     <constraint firstItem="JgP-se-cgd" firstAttribute="leading" secondItem="DPM-vi-RvB" secondAttribute="leading" id="lMN-F9-OqK"/>
                                     <constraint firstItem="JgP-se-cgd" firstAttribute="top" secondItem="DPM-vi-RvB" secondAttribute="top" id="vWI-Mk-aXG"/>
-                                    <constraint firstAttribute="bottom" secondItem="JgP-se-cgd" secondAttribute="bottom" constant="120" id="yIH-ae-Xup"/>
+                                    <constraint firstAttribute="bottom" secondItem="JgP-se-cgd" secondAttribute="bottom" id="yIH-ae-Xup"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -409,10 +409,25 @@
                     <view key="view" contentMode="scaleToFill" id="SkR-B0-QX2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="k2Y-Nn-WHL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="m6A-uN-v9Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k2Y-Nn-WHL" firstAttribute="leading" secondItem="m6A-uN-v9Q" secondAttribute="leading" id="Cje-aU-aM8"/>
+                            <constraint firstItem="m6A-uN-v9Q" firstAttribute="trailing" secondItem="k2Y-Nn-WHL" secondAttribute="trailing" id="YdU-Vl-OJR"/>
+                            <constraint firstItem="m6A-uN-v9Q" firstAttribute="bottom" secondItem="k2Y-Nn-WHL" secondAttribute="bottom" id="ifb-sQ-rqj"/>
+                            <constraint firstItem="k2Y-Nn-WHL" firstAttribute="top" secondItem="m6A-uN-v9Q" secondAttribute="top" id="iu1-M1-bNf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3jj-gb-MNK"/>
+                    <connections>
+                        <outlet property="tableView" destination="k2Y-Nn-WHL" id="naJ-J6-A0r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Qo-bP-v5A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
