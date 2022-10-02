@@ -160,7 +160,7 @@ class ViewController: UIViewController {
     //            bannerView.heightAnchor.constraint(equalToConstant: 100)
     //        ])
     //    }
-    
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.webViewLoad()
