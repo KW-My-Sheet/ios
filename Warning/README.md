@@ -31,6 +31,10 @@
 # UI 구성하기
 1. [iOS UIKit in Swift 4] UIBarButtonItem 사용하기 - [ref.](https://calmone.tistory.com/entry/iOS-UIKit-in-Swift-4-UIBarButtonItem-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 
+2. StoryBoard / Swift 파일 구분
+- 코드의 가독성을 위해 StoryBoard 파일에는 UIComponent 배치와 AutoLayout만 잡아주고, 기타 속성은 Code로 작성
+
+
 + 구독 기능 추가 
 ```
 Messaging.messaging().subscribe(toTopic: "KWCL") { error in
@@ -43,6 +47,8 @@ Messaging.messaging().subscribe(toTopic: "KWCL") { error in
 1. Back Ground에서도 알림 감
 2. [POST] 기기별 토큰 값을 Body로 넣어줘야함(+메세지도) 해당 앱을 설치할 때마다 재 생성됨
 3. 24시간 마다 재 생성되는 Authrization Refresh 토큰을 반영해줘야함.
+
+
 
 참고자료
 - [iOS Swift] FCM(Firebase Cloud Messaging), Push 메시지 설정해보기 - [ref.](https://medium.com/@jang.wangsu/ios-swift-fcm-firebase-cloud-messaging-push-%EB%A9%94%EC%8B%9C%EC%A7%80-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-852a9af23b96)

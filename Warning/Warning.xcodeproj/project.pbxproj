@@ -12,6 +12,7 @@
 		9B51310A28DEDFAC0071FE51 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310928DEDFAC0071FE51 /* Color.swift */; };
 		9B51310C28DEF0910071FE51 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310B28DEF0910071FE51 /* SettingViewController.swift */; };
 		9B6A2D8428DDE62B005AC257 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6A2D8328DDE62B005AC257 /* MainViewController.swift */; };
+		9B744F3B28F95339006A3D2E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B744F3A28F95339006A3D2E /* WebKit.framework */; };
 		9B784B9828D861B20087040D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B784B9728D861B20087040D /* AppDelegate.swift */; };
 		9B784B9A28D861B20087040D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B784B9928D861B20087040D /* SceneDelegate.swift */; };
 		9B784B9C28D861B20087040D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B784B9B28D861B20087040D /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		9B51310928DEDFAC0071FE51 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9B51310B28DEF0910071FE51 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		9B6A2D8328DDE62B005AC257 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9B744F3A28F95339006A3D2E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		9B784B9428D861B20087040D /* Warning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B784B9728D861B20087040D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B784B9928D861B20087040D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B744F3B28F95339006A3D2E /* WebKit.framework in Frameworks */,
 				B9A780937BE41D610EF5514A /* Pods_Warning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +220,7 @@
 		9E52AEC0D8BD542DB2BA67ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B744F3A28F95339006A3D2E /* WebKit.framework */,
 				25D79D28EBE4AE124C570841 /* Pods_Warning.framework */,
 			);
 			name = Frameworks;
@@ -506,10 +510,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Warning/Warning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 9LAFQ24GSN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Warning/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "KW 마이시트";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -520,12 +525,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = Jason.Warning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -537,10 +545,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Warning/Warning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 9LAFQ24GSN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Warning/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "KW 마이시트";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -551,12 +560,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = Jason.Warning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
