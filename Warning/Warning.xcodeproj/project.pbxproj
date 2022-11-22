@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0CEAD22924F3C400C21867 /* MultipleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0CEAD12924F3C400C21867 /* MultipleModel.swift */; };
+		9B0CEAD42924F3D100C21867 /* MultipleStc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0CEAD32924F3D100C21867 /* MultipleStc.swift */; };
+		9B4130A5291D438600B9569C /* Used_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4130A4291D438600B9569C /* Used_api.swift */; };
+		9B4130A7291D439400B9569C /* Used_stc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4130A6291D439400B9569C /* Used_stc.swift */; };
+		9B4B4ACB2924DA9D001105EF /* Multi_stc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B4ACA2924DA9D001105EF /* Multi_stc.swift */; };
+		9B4B4ACD2924DAB3001105EF /* Multi_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B4ACC2924DAB3001105EF /* Multi_api.swift */; };
 		9B4D0B2028E5DBDB00983E86 /* ComponentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D0B1F28E5DBDA00983E86 /* ComponentSetting.swift */; };
 		9B51310828DEDD290071FE51 /* RoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310728DEDD290071FE51 /* RoomInfo.swift */; };
 		9B51310A28DEDFAC0071FE51 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B51310928DEDFAC0071FE51 /* Color.swift */; };
@@ -40,7 +46,13 @@
 		25D79D28EBE4AE124C570841 /* Pods_Warning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Warning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		486BDBBC505A96BC149CCEFC /* Pods-Warning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Warning.release.xcconfig"; path = "Target Support Files/Pods-Warning/Pods-Warning.release.xcconfig"; sourceTree = "<group>"; };
 		65357AAE30368B4517B947D8 /* Pods-Warning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Warning.debug.xcconfig"; path = "Target Support Files/Pods-Warning/Pods-Warning.debug.xcconfig"; sourceTree = "<group>"; };
+		9B0CEAD12924F3C400C21867 /* MultipleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleModel.swift; sourceTree = "<group>"; };
+		9B0CEAD32924F3D100C21867 /* MultipleStc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleStc.swift; sourceTree = "<group>"; };
 		9B224F9228D865DE000A9321 /* Warning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Warning.entitlements; sourceTree = "<group>"; };
+		9B4130A4291D438600B9569C /* Used_api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Used_api.swift; sourceTree = "<group>"; };
+		9B4130A6291D439400B9569C /* Used_stc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Used_stc.swift; sourceTree = "<group>"; };
+		9B4B4ACA2924DA9D001105EF /* Multi_stc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multi_stc.swift; sourceTree = "<group>"; };
+		9B4B4ACC2924DAB3001105EF /* Multi_api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multi_api.swift; sourceTree = "<group>"; };
 		9B4D0B1F28E5DBDA00983E86 /* ComponentSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSetting.swift; sourceTree = "<group>"; };
 		9B51310728DEDD290071FE51 /* RoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomInfo.swift; sourceTree = "<group>"; };
 		9B51310928DEDFAC0071FE51 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -91,6 +103,33 @@
 				486BDBBC505A96BC149CCEFC /* Pods-Warning.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B0CEAD02924F3AF00C21867 /* Multiple */ = {
+			isa = PBXGroup;
+			children = (
+				9B0CEAD12924F3C400C21867 /* MultipleModel.swift */,
+				9B0CEAD32924F3D100C21867 /* MultipleStc.swift */,
+			);
+			path = Multiple;
+			sourceTree = "<group>";
+		};
+		9B4130A3291D436800B9569C /* [GET]UsedSheet */ = {
+			isa = PBXGroup;
+			children = (
+				9B4130A4291D438600B9569C /* Used_api.swift */,
+				9B4130A6291D439400B9569C /* Used_stc.swift */,
+			);
+			path = "[GET]UsedSheet";
+			sourceTree = "<group>";
+		};
+		9B4B4AC92924DA73001105EF /* [POST]MultReserve */ = {
+			isa = PBXGroup;
+			children = (
+				9B4B4ACA2924DA9D001105EF /* Multi_stc.swift */,
+				9B4B4ACC2924DAB3001105EF /* Multi_api.swift */,
+			);
+			path = "[POST]MultReserve";
 			sourceTree = "<group>";
 		};
 		9B51310628DEDCEB0071FE51 /* Configuration */ = {
@@ -157,6 +196,7 @@
 		9B7D513428E9A10C002479CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9B0CEAD02924F3AF00C21867 /* Multiple */,
 				9B7D513528E9A127002479CC /* MyReserveStc.swift */,
 				9B7D513728E9A16C002479CC /* MyReserveModel.swift */,
 			);
@@ -175,7 +215,9 @@
 		9B8B43C528DFE6FE001BDD6C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9B4130A3291D436800B9569C /* [GET]UsedSheet */,
 				9BB4199328E9952500A81B99 /* [GET]CheckReserve */,
+				9B4B4AC92924DA73001105EF /* [POST]MultReserve */,
 				9BB4199228E994FE00A81B99 /* [POST]DoReserve */,
 			);
 			path = Network;
@@ -202,8 +244,8 @@
 		9BB4199228E994FE00A81B99 /* [POST]DoReserve */ = {
 			isa = PBXGroup;
 			children = (
-				9B8B43C628DFE71C001BDD6C /* Reserve_api.swift */,
 				9B8B43C828DFE733001BDD6C /* Reserve_stc.swift */,
+				9B8B43C628DFE71C001BDD6C /* Reserve_api.swift */,
 			);
 			path = "[POST]DoReserve";
 			sourceTree = "<group>";
@@ -345,13 +387,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B0CEAD22924F3C400C21867 /* MultipleModel.swift in Sources */,
 				9B8B43C928DFE733001BDD6C /* Reserve_stc.swift in Sources */,
 				9B784B9C28D861B20087040D /* ViewController.swift in Sources */,
+				9B4B4ACD2924DAB3001105EF /* Multi_api.swift in Sources */,
 				9B8B43DC28E15AF9001BDD6C /* SettingCell.swift in Sources */,
 				9B784B9828D861B20087040D /* AppDelegate.swift in Sources */,
 				9B4D0B2028E5DBDB00983E86 /* ComponentSetting.swift in Sources */,
 				9B8B43CF28DFECE5001BDD6C /* ReserveDetail.swift in Sources */,
+				9B4B4ACB2924DA9D001105EF /* Multi_stc.swift in Sources */,
 				9B784B9A28D861B20087040D /* SceneDelegate.swift in Sources */,
+				9B4130A5291D438600B9569C /* Used_api.swift in Sources */,
 				9BB4199528E9954000A81B99 /* Check_stc.swift in Sources */,
 				9BB4199728E9969400A81B99 /* Check_api.swift in Sources */,
 				9B7D513628E9A127002479CC /* MyReserveStc.swift in Sources */,
@@ -359,10 +405,12 @@
 				9B51310828DEDD290071FE51 /* RoomInfo.swift in Sources */,
 				9B7D513828E9A16C002479CC /* MyReserveModel.swift in Sources */,
 				9B8B43C728DFE71C001BDD6C /* Reserve_api.swift in Sources */,
+				9B0CEAD42924F3D100C21867 /* MultipleStc.swift in Sources */,
 				9B7D513C28E9A426002479CC /* MyReserveCells.swift in Sources */,
 				9B51310A28DEDFAC0071FE51 /* Color.swift in Sources */,
 				9B51310C28DEF0910071FE51 /* SettingViewController.swift in Sources */,
 				9B6A2D8428DDE62B005AC257 /* MainViewController.swift in Sources */,
+				9B4130A7291D439400B9569C /* Used_stc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +558,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Warning/Warning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 9LAFQ24GSN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Warning/Info.plist;
@@ -525,7 +573,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Jason.Warning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -545,7 +593,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Warning/Warning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 9LAFQ24GSN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Warning/Info.plist;
@@ -560,7 +608,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Jason.Warning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
